@@ -6,7 +6,7 @@ class character {
     character next;
 }
 
-public class pilha {
+public class pilha { //pilha é o nome do arquivo java, deve ser alterado para o nome do seu arquivo
     public static Scanner keyboard = new Scanner(System.in);
 
     static character addCharacter(character ftop, char fletter) {
