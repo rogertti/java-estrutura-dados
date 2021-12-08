@@ -15,8 +15,8 @@ public class lista_dupla { //lista_dupla é o nome do arquivo java, deve ser alt
         product input = new product();
 
         System.out.println("Informe a descrição do produto:");
-        input.descricao = keyboard.nextLine();
-        input.descricao = keyboard.nextLine();
+        input.descricao = keyboard.nextLine(); //bug do compilador ter
+        input.descricao = keyboard.nextLine(); //que repetir 2x a mesma linha.
         System.out.println("Informe a quantidade:");
         input.quantidade = keyboard.nextInt();
         input.next = null;
@@ -54,9 +54,9 @@ public class lista_dupla { //lista_dupla é o nome do arquivo java, deve ser alt
         product input = new product();
 
         System.out.println("Qual produto deseja remover?");
-        //String descricao = keyboard.nextLine();
-        input.descricao = keyboard.nextLine();
-        input.descricao = keyboard.nextLine();
+        //String descricao = keyboard.nextLine(); //era praa ser só essa linha mas,
+        input.descricao = keyboard.nextLine(); //é bug do compilador ter
+        input.descricao = keyboard.nextLine(); //repetir 2x a mesma linha.
         
             if (finicio == null) {
                 System.out.println("Lista de compras vazia.");
