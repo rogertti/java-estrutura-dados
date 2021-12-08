@@ -27,11 +27,13 @@ public class fila { //fila é o nome do arquivo java, deve ser alterado para o n
             if(finicio == null) {
                 return input;
             } else {
-                while(finicio.next != null) {
-                    finicio = finicio.next;
-                }
+                pessoa aux = finicio;
 
-                finicio.next = input;
+                    while(aux.next != null) {
+                        aux = aux.next;
+                    }
+
+                aux.next = input;
 
                 return finicio;
             }
