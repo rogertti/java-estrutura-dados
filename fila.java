@@ -16,8 +16,8 @@ public class fila { //fila é o nome do arquivo java, deve ser alterado para o n
         pessoa input = new pessoa();
 
         System.out.println("Informe o nome do cliente: ");
-        input.nome = keyboard.nextLine();
-        input.nome = keyboard.nextLine();
+        input.nome = keyboard.nextLine(); //bug do compilador ter
+        input.nome = keyboard.nextLine(); //que repetir 2x a mesma linha.
         System.out.println("Informe o cpf do cliente: ");
         input.cpf = keyboard.nextLine();
         System.out.println("Informe o descrição do atendimento: ");
